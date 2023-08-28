@@ -1,12 +1,12 @@
-- name: This playbook is to insatll tomcat
+- name: This playbook is to insatll httpd
   hosts: prod
   become: true
   tasks:
-  - name: Install Tomcat
+  - name: Install httpd
     ansible.builtin.yum:
-      name: tomcat
+      name: httpd
       state: latest
-  - name: start tomcat service
+  - name: start httpd service
     ansible.builtin.service:
-      name: tomcat
+      name: httpd
       state: started
