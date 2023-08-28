@@ -1,5 +1,5 @@
 - name: This playbook is to insatll nginx
-  hosts: all
+  hosts: dev
   become: true
   tasks:
   - name: Install nginx
