@@ -1,5 +1,5 @@
 [dev]
 padmaansible-in-dev-web.padmasrikanth.tech	
 
-[prod]
-padmaansible-in-prd-web.padmasrikanth.tech
+#[prod]
+#padmaansible-in-prd-web.padmasrikanth.tech
