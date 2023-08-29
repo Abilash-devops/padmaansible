@@ -1,5 +1,5 @@
 - name: This playbook is to insatll httpd
-  hosts: prod
+  hosts: dev
   become: true
   tasks:
   - name: Install httpd
