@@ -1,0 +1,7 @@
+- name: This play book it to test the variables
+  hosts: dev 
+  become: true 
+  tasks:
+  - name: This to print the message
+    ansible.builtin.debug:
+      msg: Learning Ansible
