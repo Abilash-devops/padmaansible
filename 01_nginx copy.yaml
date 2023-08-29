@@ -1,6 +1,0 @@
-- name: This playbook is to insatll nginx
-  hosts: dev
-  become: true
-  tasks:
-  - name: Ping Test
-    ansible.builtin.ping:
