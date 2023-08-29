@@ -1,7 +1,15 @@
 - name: This play book it to test the variables
   hosts: dev 
   become: true 
+  vars: 
+    course: DEVOPS 
+    trainer: sivakumar reddy
+    fees: 20k
+    duration: 4months
   tasks:
   - name: This to print the message
     ansible.builtin.debug:
       msg: Learning Ansible
+  - name: This to print the message via variables
+    ansible.builtin.debug:
+      msg: Learning {{course}} by {{trainer}} with fess of {{fees}} and duration of {{duration}}
