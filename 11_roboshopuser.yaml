@@ -1,0 +1,9 @@
+- name: This playbook is to create a user roboshop if its doesnt exists
+  hosts: localhost
+  tasks:
+  - name: check roboshop user exists or not
+    ansible.builtin.command: id roboshop
+    register: output 
+  - name: display the output
+    ansible.builtin.debug: 
+      msg: "output is {{output}}"
