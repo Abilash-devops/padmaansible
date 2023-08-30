@@ -1,9 +1,9 @@
--name: This is to call varaibles from file
- hosts: localhost
- vars_file:
-  - varaibles.yaml
- tasks:
- - name: This is to print variables from the file
-   ansible.builtin.debug:
-    msg: "{{course}} is prepared by {{trainer}} with fees of {{fees}} and duriation of {{duration}}"
+- name: This is to call varaibles from file
+  hosts: localhost
+  vars_file:
+    - varaibles.yaml
+  tasks:
+  - name: This is to print variables from the file
+    ansible.builtin.debug:
+      msg: "{{course}} is prepared by {{trainer}} with fees of {{fees}} and duriation of {{duration}}"
 
