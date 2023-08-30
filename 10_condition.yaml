@@ -1,0 +1,9 @@
+- name: This task is to create a user 
+  hosts: localhost 
+  vars: 
+   name: padma
+  tasks: 
+  - name: check the user
+    ansible.builtin.debug:
+      msg: " name is {{name}}"
+    when: name == "padma"
