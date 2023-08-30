@@ -10,7 +10,7 @@
     private: false
   tasks: 
   - name: This task is to call the varaibles
-    vars:
-      course: devops-task
+    # vars:
+    #   course: devops-task
     ansible.builtin.debug:
       msg: "course is : {{course}}"
