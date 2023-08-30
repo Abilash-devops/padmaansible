@@ -5,9 +5,9 @@
   # vars_files:
   # - variables.yaml
   vars_prompt:
-  - name: course
-    prompt: What is your input?
-    private: false
+  # - name: course
+  #   prompt: What is your input?
+  #   private: false
   tasks: 
   - name: This task is to call the varaibles
     # vars:
