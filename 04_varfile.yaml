@@ -1,6 +1,6 @@
 - name: This is to call varaibles from file
   hosts: localhost
-  vars_file:
+  vars_files:
    - varaibles.yaml
   tasks:
   - name: This is to print variables from the file
