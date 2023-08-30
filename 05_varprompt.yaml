@@ -1,0 +1,13 @@
+- name: This playbook is for variable prompt
+  hosts: localhost
+  vars_prompt:
+  - name: username
+    prompt: What is your username?
+    private: false
+  - name: password
+    prompt: What is your password?
+    private: true
+  tasks:
+  - name: This tasks is to display the variable prompt
+    ansible.builtin.debug:
+      msg: "username is: {{username}}, password is: {{password}}"
