@@ -1,7 +1,7 @@
 - name: This task is to create a user 
   hosts: localhost 
   vars: 
-   name: padma
+   name: padmaa
   tasks: 
   - name: check the user
     ansible.builtin.debug:
