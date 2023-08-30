@@ -1,5 +1,5 @@
 [dm2]
-dm2-ap-dev-web.padmasrikanth.tech
+node1.padmasrikanth.tech	
 
-[prk]
-prk-us-app-web.padmasrikanth.tech	
+[dm2:vars]
+course=devops-inventory
