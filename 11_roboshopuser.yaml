@@ -10,4 +10,4 @@
       msg: "output is {{output}}"
   - name: Display output with rc
     ansible.builtin.debug:
-      msg: "output is {{output.rc}}
+      msg: "output is {{output.rc}}"
