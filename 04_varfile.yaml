@@ -1,9 +1,9 @@
-- name: variables from files
-  hosts: localhost #managing the ansible server itself
+- name: This playbook is to call variables from a file
+  hosts: localhost
   vars_files:
   - variables.yaml
-  tasks:
-  - name: printing variables
+  tasks: 
+  - name: This playbook is to call variables from a file
     ansible.builtin.debug:
-      msg: "We are learning {{NAME}}, Duration is: {{DURATION}}, Trainer is: {{TRAINER}}"
+      msg: " we are learning {{course}} from {{trainer}} with fees of {{fees}} and duriation of {{duration}} "
 
