@@ -1,0 +1,12 @@
+- name: This playbook is to talk about inheritance
+  hosts: localhost
+  vars:
+    course: devops-play
+    fees: 20k
+  tasks:
+  - name: call this from the tasks
+    vars:
+      course: devops-task
+      mode: online
+    ansible.builtin.debug:
+      msg: "We are learing {{course}} with {{fees}} of which is {{mode}} mode"
