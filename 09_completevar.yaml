@@ -2,8 +2,8 @@
   hosts: dm2
   vars:
     course: devops-play
-  vars_files:
-  - variables.yaml
+  # vars_files:
+  # - variables.yaml
   vars_prompt:
   - name: input
     prompt: What is your input?
