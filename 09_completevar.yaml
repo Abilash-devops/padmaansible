@@ -1,7 +1,7 @@
 - name : This playbook is to call the varibales from all 
   hosts: dm2
-  vars:
-    course: devops-play
+  # vars:
+  #   course: devops-play
   # vars_files:
   # - variables.yaml
   vars_prompt:
