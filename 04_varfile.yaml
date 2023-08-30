@@ -1,7 +1,7 @@
 - name: This is to call varaibles from file
   hosts: localhost
   vars_file:
-    - varaibles.yaml
+   - varaibles.yaml
   tasks:
   - name: This is to print variables from the file
     ansible.builtin.debug:
