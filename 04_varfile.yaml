@@ -1,9 +1,9 @@
-- name: This is to call varaibles from file
-  hosts: localhost
+- name: variables from files
+  hosts: localhost #managing the ansible server itself
   vars_files:
-   - varaibles.yaml
+  - variables.yaml
   tasks:
-  - name: This is to print variables from the file
+  - name: printing variables
     ansible.builtin.debug:
       msg: "We are learning {{NAME}}, Duration is: {{DURATION}}, Trainer is: {{TRAINER}}"
 
