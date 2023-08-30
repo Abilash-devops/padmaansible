@@ -5,7 +5,7 @@
   tasks: 
   - name: This playbook is to call variables from a file
     ansible.builtin.debug:
-      msg: "we are learning {{course}} from {{trainer}} with fees of {{fees}} and duriation of {{duration}}"
+      msg: "course is : {{course}}"
 
 
 
