@@ -1,0 +1,6 @@
+- name: This play book is to call the varibles from command line 
+  hosts: dm2
+  tasks: 
+  - name: Call the varaibles from the command line
+    ansible.builtin.debug:
+      msg: " course is : {{course}} "
