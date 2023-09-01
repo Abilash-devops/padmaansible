@@ -4,9 +4,8 @@
   tasks: 
   - name: This task is to check the loop
     ansible.builtin.debug:
-      msg: Hello "{{item}}"
+      msg: Hello {{item}}
     loop:
     - padma
     - srikanth
     - kakarla
-    
