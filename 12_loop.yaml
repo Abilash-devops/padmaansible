@@ -1,0 +1,12 @@
+- name: This playbook is to install the loop 
+  hosts: localhost 
+  become: true
+  tasks: 
+  - name: This task is to check the loop
+    ansible.builtin.debug:
+      msg: Hello "{{item}}"
+    loop:
+    - padma
+    - srikanth
+    - kakarla
+    
